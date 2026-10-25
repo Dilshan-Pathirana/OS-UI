@@ -1,0 +1,13 @@
+<!-- @dsCard group="Daily" height=360 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>MedicineCard — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+var C=window.CureHome,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'ch-stage',style:{flexDirection:'column'}},
+ h(C.MedicineCard,{name:'Metformin 500 mg',detail:'1 tablet \u00B7 after breakfast \u00B7 Dr N. Perera'}),h(C.MedicineCard,{name:'Amlodipine 5 mg',detail:'1 tablet \u00B7 morning',taken:true,takenAt:'7:02 AM'})));
+</script>
+</body>
+</html>

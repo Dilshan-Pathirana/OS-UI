@@ -1,0 +1,14 @@
+<!-- @dsCard group="Identity" height=290 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>FamilyAvatar — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+var C=window.CureHome,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'ch-stage',style:{gap:24}},
+ h(C.FamilyAvatar,{name:'Amma',note:'BP, weight, sugar done',progress:1}),h(C.FamilyAvatar,{name:'Thaththa',note:'Weight pending',progress:0.66}),
+ h(C.FamilyAvatar,{name:'Nimal',note:'Evening walk',progress:0.25,tone:'watch'}),h(C.FamilyAvatar,{add:true,name:'Add member',note:'Face, with consent'})));
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!-- @dsCard group="Status" height=120 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>FreshnessChip — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+var C=window.CureHome,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'ch-stage'},
+ h(C.FreshnessChip,{state:'fresh'},'Updated 6 min ago'),h(C.FreshnessChip,{state:'recent'},'3 days ago'),h(C.FreshnessChip,{state:'stale'},'Older than a week'),h(C.FreshnessChip,{state:'error'},'Couldn\u2019t sync')));
+</script>
+</body>
+</html>

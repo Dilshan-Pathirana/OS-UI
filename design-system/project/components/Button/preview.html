@@ -1,0 +1,13 @@
+<!-- @dsCard group="Actions" height=200 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Button — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+var C=window.CureHome,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'ch-stage'},
+ h(C.Button,{variant:'primary',size:'lg'},'Start check'),h(C.Button,{variant:'confirm'},'Mark as taken'),h(C.Button,{variant:'secondary'},'Use my PIN'),h(C.Button,{variant:'ghost'},'Not now'),h(C.Button,{variant:'danger'},'Forget me')));
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!-- @dsCard height=320 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cure Home</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--screen); color:var(--text); font-family:var(--font-display); overflow:hidden; }
+  .cover { position:relative; height:320px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:320px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:320px; }
+  .blue { fill:var(--cure-blue); }
+  .green { fill:var(--cure-green); }
+  .ink { fill:var(--text); }
+  .lime { fill:var(--cure-lime); }
+  .slab { rx:var(--radius-card); }
+  .disc { rx:var(--space-5); }
+  .orbit { fill:none; stroke:var(--screen); stroke-width:3; }
+  .orbit.lit { stroke:var(--cure-lime); stroke-width:2; stroke-dasharray:2 8; }
+  .words { position:absolute; left:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-size:104px; line-height:.92; font-weight:600; letter-spacing:-.03em; color:var(--text); }
+  .tag { margin:var(--space-3) 0 0 4px; font-family:var(--font-ui); font-size:14px; line-height:20px; font-weight:600; color:var(--text-2); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 320" width="480" height="320">
+<!--
+  blocks      cure-blue 160×256 slab bled off the top (identity, largest) · cure-green 112×112 (the logo's crescent) · text/ink 176×144 bleeding off the right edge · cure-lime 48×48 disc (the orbit marker) — about a third of 960×320
+  arrangement one tall blue slab with satellites, bottoms on one line space-6 above the edge, space-4 gutters
+  pattern     literal motif: the Orbit View's rings — three concentric ellipses around the lime disc, cut into the blocks in the ground colour, the outer one dotted in lime on the ground ("the face is the centre; everything else orbits it")
+  scales      sides in space-4 multiples; gutters space-4; inset space-6; corners radius-card (28); disc rx space-5 (half its 48 side)
+-->
+<rect class="blue slab" x="16" y="-28" width="160" height="316" rx="28"/>
+<rect class="green slab" x="192" y="176" width="112" height="112" rx="28"/>
+<rect class="ink slab" x="320" y="144" width="192" height="144" rx="28"/>
+<rect class="lime disc" x="216" y="72" width="48" height="48" rx="24"/>
+<ellipse class="orbit" cx="240" cy="96" rx="96" ry="72"/>
+<ellipse class="orbit" cx="240" cy="96" rx="160" ry="124"/>
+<ellipse class="orbit lit" cx="240" cy="96" rx="224" ry="176"/>
+</svg>
+</div>
+<div class="words">
+  <h1 class="name">Cure<br>Home</h1>
+  <p class="tag">A calm, private health hub that greets the whole family.</p>
+</div>
+</div>
+</body>
+</html>

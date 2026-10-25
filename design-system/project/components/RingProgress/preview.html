@@ -1,0 +1,15 @@
+<!-- @dsCard group="Data" height=200 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>RingProgress — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+var C=window.CureHome,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'ch-stage'},
+ h(C.RingProgress,{value:0.5,size:140,'aria-label':'Face capture'},h('div',{className:'body'},'3 of 6')),
+ h(C.RingProgress,{value:0.75,size:140,color:'var(--vital-bp)','aria-label':'Rest timer'},h('div',{className:'title'},'0:45')),
+ h(C.RingProgress,{value:1,size:140,color:'var(--cure-green)','aria-label':'Done'},h('div',{className:'body'},'Done'))));
+</script>
+</body>
+</html>

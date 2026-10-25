@@ -1,0 +1,16 @@
+<!-- @dsCard group="Data" height=430 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>VitalCard — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+var C=window.CureHome,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'ch-stage'},
+ h(C.VitalCard,{kind:'weight',value:'62.4',unit:'kg',meta:'Just now \u00B7 Cure Scale',series:[63.8,63.6,63.5,63.4,63.2,63.1,62.4]}),
+ h(C.VitalCard,{kind:'bp',value:'124/78',unit:'mmHg',meta:'Just now \u00B7 average of 2',status:{tone:'good',text:'Within your target'}}),
+ h(C.VitalCard,{kind:'sugar',value:'96',unit:'mg/dL',meta:'Fasting \u00B7 6:50 AM',series:[112,108,104,101,99,98,96]}),
+ h(C.VitalCard,{kind:'spo2',value:'98',unit:'%',meta:'Yesterday \u00B7 Oximeter',discreet:true})));
+</script>
+</body>
+</html>

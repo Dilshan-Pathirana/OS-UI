@@ -1,0 +1,15 @@
+<!-- @dsCard group="Surfaces" height=230 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>GlassPanel — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+var C=window.CureHome,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'ch-stage'},
+ h(C.GlassPanel,{material:'glass',padding:24,style:{width:250}},h('div',{className:'label ch-muted'},'GLASS'),h('div',{className:'body',style:{marginTop:8}},'Cards on the aurora')),
+ h(C.GlassPanel,{material:'strong',radius:'panel',padding:24,style:{width:250}},h('div',{className:'label ch-muted'},'STRONG'),h('div',{className:'body',style:{marginTop:8}},'Sheets and long text')),
+ h(C.GlassPanel,{material:'solid',padding:24,style:{width:250}},h('div',{className:'label ch-muted'},'SOLID'),h('div',{className:'body',style:{marginTop:8}},'Clear view'))));
+</script>
+</body>
+</html>

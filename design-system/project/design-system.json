@@ -1,0 +1,52 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-21T14:50:01Z"
+ },
+ "title": "Cure Home",
+ "namespace": "CureHome",
+ "libraries": [
+  {
+   "name": "react",
+   "version": "18"
+  },
+  {
+   "name": "react-dom",
+   "version": "18"
+  }
+ ],
+ "sections": {},
+ "groups": [
+  "Logos"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "cure-logo.png"
+   ],
+   "files": {
+    "cure-logo.png": {
+     "name": "cure-logo.png",
+     "blob": "c94431f58954f0da8cf731de468d4e09",
+     "size": 124728,
+     "type": "image/png"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Dilshan",
+  "at": "2026-10-21T15:05:00Z",
+  "via": "Claude (cloud session)",
+  "note": "Consistency pass: vital value 48px, motion tokens moved into tokens.json, one blur token (16px, max 3 surfaces), neutral stale chip, doctor-target status rules, unified second-face rule."
+ }
+}

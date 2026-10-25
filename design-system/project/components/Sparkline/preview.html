@@ -1,0 +1,16 @@
+<!-- @dsCard group="Data" height=120 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Sparkline — preview</title></head>
+<body>
+<div id="root"></div>
+<script>
+var C=window.CureHome,h=React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'ch-stage'},
+ h(C.Sparkline,{values:[63.8,63.6,63.5,63.4,63.2,63.1,62.4],color:'var(--vital-weight)',width:160,height:48}),
+ h(C.Sparkline,{values:[138,134,136,131,133,129,124],color:'var(--vital-bp)',width:160,height:48}),
+ h(C.Sparkline,{values:[76,74,77,73,72,74,72],color:'var(--vital-pulse)',width:160,height:48}),
+ h(C.Sparkline,{values:[96],color:'var(--vital-sugar)',width:160,height:48})));
+</script>
+</body>
+</html>
